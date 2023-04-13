@@ -4,7 +4,7 @@ import Foundation
 public struct GhostStringHunter {
 
     public init() {}
-    public private(set) var text = "Hello, World"
+    public private(set) var text = "Hello, World!"
     
     public static func main() {
         print(GhostStringHunter().text)
