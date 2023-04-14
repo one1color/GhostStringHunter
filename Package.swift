@@ -5,9 +5,6 @@ import PackageDescription
 
 let package = Package(
     name: "GhostStringHunter",
-    platforms: [
-        .macOS(.v12)
-    ],
     products: [
         .library(
             name: "GhostStringHunter",
