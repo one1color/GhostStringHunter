@@ -2,5 +2,5 @@
 
 Detect and Remove unused localized strings from your swiftUI🍎 projects.
 
-##Usage
+## Usage
 Coming soon..

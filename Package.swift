@@ -18,9 +18,8 @@ let package = Package(
         .target(
             name: "GhostStringHunter",
             dependencies: []),
-        .executableTarget(
+        .target(
             name: "GhostStringHunterExecutable",
-            dependencies: ["GhostStringHunter"],
-            path: "Executable")
+            dependencies: ["GhostStringHunter"])
     ]
 )
