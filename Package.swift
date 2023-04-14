@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.7
 import PackageDescription
 
 let package = Package(
@@ -7,13 +7,16 @@ let package = Package(
         .macOS(.v11),
     ],
     products: [
-        .executable(
-            name: "Ghoststringhunter",
+        .library(
+            name: "GhostStringHunter",
             targets: ["GhostStringHunter"]),
     ],
     dependencies: [
     ],
     targets: [
+        .executableTarget(
+            name: "GhostStringHunterCLI",
+            dependencies: ["GhostStringHunter"]),
         .target(
             name: "GhostStringHunter",
             dependencies: []),
