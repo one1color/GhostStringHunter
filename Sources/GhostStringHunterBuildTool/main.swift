@@ -17,9 +17,10 @@ func findLocalizableStringsFiles(inDirectory directoryPath: String) -> [String] 
 func main() {
     // Locate the current directory path
     let currentDirectoryPath = FileManager.default.currentDirectoryPath
-
+    print("warning: search starting point(test): \(currentDirectoryPath)")
     // Find all Localizable.strings files in the project
     let localizableStringsFiles = findLocalizableStringsFiles(inDirectory: currentDirectoryPath)
+    print("warning: found localizableString(test): \(localizableStringsFiles)")
 
     // Process each Localizable.strings file
     for localizableStringsPath in localizableStringsFiles {
