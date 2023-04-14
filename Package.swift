@@ -7,9 +7,6 @@ let package = Package(
         .macOS(.v11),
     ],
     products: [
-        .library(
-            name: "GhostStringHunter",
-            targets: ["GhostStringHunter"]),
         .executable(
             name: "Ghoststringhunter",
             targets: ["GhostStringHunter"]),
