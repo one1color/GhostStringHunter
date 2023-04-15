@@ -32,7 +32,8 @@ func main() {
     print("warning: search starting point(test): \(currentDirectoryPath)")
     
     let parentDirectoryPath = URL(fileURLWithPath: currentDirectoryPath).deletingLastPathComponent().path
-    
+    print("warning: search starting point(test): \(parentDirectoryPath)")
+
     // Find the .xcodeproj or .xcworkspace file and the project root path for "LocalizeTest"
     guard findProjectPath(projectName: "localizeTest", inDirectory: parentDirectoryPath) != nil else {
         print("Error: Could not find the project root path.")
