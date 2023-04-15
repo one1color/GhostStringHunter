@@ -28,7 +28,7 @@ func findLocalizableStringsFiles(inDirectory directoryPath: String) -> [String] 
 
 func main() {
     // Locate the current directory path
-    let currentDirectoryPath = FileManager.default.currentDirectoryPath
+    let currentDirectoryPath = "/Users/kokiisshiki/github.com/private/localizeTest"
     print("warning: search starting point(test): \(currentDirectoryPath)")
     
     let parentDirectoryPath = URL(fileURLWithPath: currentDirectoryPath).deletingLastPathComponent().path
